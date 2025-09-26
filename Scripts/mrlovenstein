@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+# Local file setup
+readonly program="${0}"
+readonly feeds_dir="$(dirname "$(dirname "${program}")")/Feeds"
+readonly feed_file="${feeds_dir}/$(basename "${program}").json"
+readonly tmp_file="$(mktemp)"
+
+# Strategy to get feed details
+readonly source_url='https://tapas.io/rss/series/3346/'
+readonly top_url="$(curl "${source_url}" | xmllint --xpath 'string(/rss/channel/item[1]/link)' -)"
+readonly top_id="$(awk -F '/' '{print $NF}' <<< "${top_url}")"
+readonly top_title="$(curl "${top_url}" | xmllint --html --xpath "string(//*[@id='episode-${top_id}']/div[1]/div/p[1])" - | sed 's/\?.*//')"
+readonly top_main="$(curl "${top_url}" | xmllint --html --xpath "string(//*[@id='episode-${top_id}']/div[1]/article/img[1]/@data-src)" - | sed 's/\?.*//')"
+readonly top_bonus="$(curl "${top_url}" | xmllint --html --xpath "string(//*[@id='episode-${top_id}']/div[1]/article/img[2]/@data-src)" - | sed 's/\?.*//')"
+
+# Stop early if item already in feed
+[[ "$(jq --raw-output '.items[0].id' "${feed_file}")" == "${top_id}" ]] && exit
+
+# Add to feed, keeping only the most recent five
+jq \
+  --arg id "${top_id}" \
+  --arg url "${top_url}" \
+  --arg title "${top_title}" \
+  --arg html "<img src='${top_main}'><br><img src='${top_bonus}'>" \
+  '.items = ([{ id: $id, url: $url, title: $title, content_html: $html }] + (.items // [])) | .items = (.items[0:5])' \
+  "${feed_file}" > "${tmp_file}"
+
+mv "${tmp_file}" "${feed_file}"
