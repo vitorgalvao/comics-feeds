@@ -3,5 +3,12 @@
   "title": "Mr. Lovenstein",
   "home_page_url": "https://tapas.io/series/MrLovenstein/info",
   "feed_url": "https://tapas.io/rss/series/3346/",
-  "items": []
+  "items": [
+    {
+      "id": "3666580",
+      "url": "https://tapas.io/episode/3666580",
+      "title": "Zombo the Gorilla",
+      "content_html": "<img src='https://us-a.tapas.io/c/65/f0985350-13e0-4c9c-99d3-bf0ccbf6758d.png'><br><img src='https://us-a.tapas.io/c/66/b973a467-6998-4227-944f-de0ef0b817a5.gif'>"
+    }
+  ]
 }
