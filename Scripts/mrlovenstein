@@ -14,7 +14,7 @@ readonly top_title="$(curl "${top_url}" | xmllint --html --xpath "string(//*[@id
 readonly top_main="$(curl "${top_url}" | xmllint --html --xpath "string(//*[@id='episode-${top_id}']/div[1]/article/img[1]/@data-src)" - | sed 's/\?.*//')"
 readonly top_bonus="$(curl "${top_url}" | xmllint --html --xpath "string(//*[@id='episode-${top_id}']/div[1]/article/img[2]/@data-src)" - | sed 's/\?.*//')"
 
-# Stop early if item already in feed
+# Exit early if item already in feed
 [[ "$(jq --raw-output '.items[0].id' "${feed_file}")" == "${top_id}" ]] && exit
 
 # Add to feed, keeping only the most recent five

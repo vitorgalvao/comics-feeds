@@ -14,7 +14,7 @@ readonly top_url="$(jq --raw-output '.url' <<< "${top_entry}")"
 readonly top_title="$(jq --raw-output '.title' <<< "${top_entry}")"
 readonly top_videos_html="$(jq --raw-output '.media[] | select(.type == "video") | "<video><source src=\"\(.url)\" type=\"\(.mime_type)\"></video>"' <<< "${top_entry}")"
 
-# Stop early if item already in feed
+# Exit early if item already in feed
 [[ "$(jq --raw-output '.items[0].id' "${feed_file}")" == "${top_id}" ]] && exit
 
 # Add to feed, keeping only the most recent five
