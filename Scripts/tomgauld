@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+# Local file setup
+readonly program="${0}"
+readonly feeds_dir="$(dirname "$(dirname "${program}")")/Feeds"
+readonly feed_file="${feeds_dir}/$(basename "${program}").json"
+readonly tmp_file="$(mktemp)"
+
+# Strategy to get feed details
+readonly source_url='https://myjetpack.tumblr.com/rss'
+readonly top_item="$(curl "${source_url}" | xmllint --xpath '/rss/channel/item[1]' -)"
+readonly top_title="$(xmllint --xpath 'string(/item/title)' - <<< "$top_item")"
+
+# Exit early if title does not contain "cartoon"
+grep --ignore-case --quiet 'cartoon' <<< "${top_title}" || exit
+
+# Continue strategy
+readonly top_url="$(xmllint --xpath 'string(/item/link)' - <<< "${top_item}")"
+readonly top_id="${top_url}"
+readonly top_main="$(xmllint --xpath 'string(/item/description)' - <<< "${top_item}" | xmllint --html --xpath '//img' -)"
+
+# Exit early if item already in feed
+[[ "$(jq --raw-output '.items[0].id' "${feed_file}")" == "${top_id}" ]] && exit
+
+# Add to feed, keeping only the most recent five
+jq \
+  --arg id "${top_id}" \
+  --arg url "${top_url}" \
+  --arg title "${top_title}" \
+  --arg html "${top_main}" \
+  '.items = ([{ id: $id, url: $url, title: $title, content_html: $html }] + (.items // [])) | .items = (.items[0:5])' \
+  "${feed_file}" > "${tmp_file}"
+
+mv "${tmp_file}" "${feed_file}"
