@@ -11,7 +11,7 @@ readonly source_url='https://tapas.io/rss/series/3346/'
 readonly top_url="$(curl "${source_url}" | xmllint --xpath 'string(/rss/channel/item[1]/link)' -)"
 readonly top_id="$(awk -F '/' '{print $NF}' <<< "${top_url}")"
 readonly top_title="$(curl "${top_url}" | xmllint --html --xpath "string(//*[@id='episode-${top_id}']/div[1]/div/p[1])" - | sed 's/\?.*//')"
-readonly top_main="$(curl "${top_url}" | xmllint --html --xpath "string(//*[@id='episode-${top_id}']/div[1]/article/img[1]/@data-src)" - | sed 's/\?.*//')"
+readonly top_media="$(curl "${top_url}" | xmllint --html --xpath "string(//*[@id='episode-${top_id}']/div[1]/article/img[1]/@data-src)" - | sed 's/\?.*//')"
 readonly top_bonus="$(curl "${top_url}" | xmllint --html --xpath "string(//*[@id='episode-${top_id}']/div[1]/article/img[2]/@data-src)" - | sed 's/\?.*//')"
 
 # Exit early if item already in feed
@@ -22,7 +22,7 @@ jq \
   --arg id "${top_id}" \
   --arg url "${top_url}" \
   --arg title "${top_title}" \
-  --arg html "<img src='${top_main}'><br><img src='${top_bonus}'>" \
+  --arg html "<img src='${top_media}'><br><img src='${top_bonus}'>" \
   '.items = ([{ id: $id, url: $url, title: $title, content_html: $html }] + (.items // [])) | .items = (.items[0:5])' \
   "${feed_file}" > "${tmp_file}"
 
