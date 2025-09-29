@@ -2,5 +2,12 @@
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Manga Monday on Imgur",
   "home_page_url": "https://imgur.com/user/keyblader1985",
-  "items": []
+  "items": [
+    {
+      "id": "JktUYqS",
+      "url": "https://imgur.com/gallery/manga-monday-why-is-heroine-not-popular-oneshot-JktUYqS",
+      "title": "Manga Monday: \"Why is the Heroine Not Popular...?\" (oneshot)",
+      "content_html": "<img src=\"https://i.imgur.com/J426XMU.png>\n<img src=\"https://i.imgur.com/Qqj1Xa2.png>\n<img src=\"https://i.imgur.com/csco1fA.png>\n<img src=\"https://i.imgur.com/w0xJx6M.png>"
+    }
+  ]
 }
