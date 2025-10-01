@@ -4,6 +4,12 @@
   "home_page_url": "https://tapas.io/series/MrLovenstein/info",
   "items": [
     {
+      "id": "3672401",
+      "url": "https://tapas.io/episode/3672401",
+      "title": "Nowhere To Go But Up",
+      "content_html": "<img src='https://us-a.tapas.io/c/63/4eab7970-1fc1-4ce4-a4f1-e30a44898cb7.png'><br><img src='https://us-a.tapas.io/c/24/343053b5-bcde-425d-ba5c-35f3eb19f06f.gif'>"
+    },
+    {
       "id": "3670612",
       "url": "https://tapas.io/episode/3670612",
       "title": "Keep it 100",
