@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Local file setup
-readonly program="${0}"
+readonly program="$(realpath "${0}")"
 readonly feeds_dir="$(dirname "$(dirname "${program}")")/Feeds"
 readonly feed_file="${feeds_dir}/$(basename "${program}").json"
 readonly tmp_file="$(mktemp)"
