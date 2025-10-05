@@ -22,6 +22,7 @@ jobs:
       run: |
         for script in "$(pwd)/Scripts/"*
         do
+          echo "Running $(basename "${script}")..."
           "${script}"
         done
     - name: Set up git user
