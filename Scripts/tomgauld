@@ -12,7 +12,7 @@ readonly top_item="$(curl --silent "${source_url}" | xmllint --xpath '/rss/chann
 readonly top_title="$(xmllint --xpath 'string(/item/title)' - <<< "$top_item")"
 
 # Exit early if title does not contain "cartoon"
-grep --ignore-case --quiet 'cartoon' <<< "${top_title}" || exit
+grep --ignore-case --quiet 'cartoon' <<< "${top_title}" || exit 0
 
 # Continue strategy
 readonly top_url="$(xmllint --xpath 'string(/item/link)' - <<< "${top_item}")"
@@ -20,7 +20,7 @@ readonly top_id="${top_url}"
 readonly top_media="$(xmllint --xpath 'string(/item/description)' - <<< "${top_item}" | xmllint --html --xpath '//img' - 2>/dev/null)"
 
 # Exit early if item already in feed
-[[ "$(jq --raw-output '.items[0].id' "${feed_file}")" == "${top_id}" ]] && exit
+[[ "$(jq --raw-output '.items[0].id' "${feed_file}")" == "${top_id}" ]] && exit 0
 
 # Add to feed, keeping only the most recent five
 jq \
