@@ -17,7 +17,7 @@ grep --ignore-case --quiet 'cartoon' <<< "${top_title}" || exit
 # Continue strategy
 readonly top_url="$(xmllint --xpath 'string(/item/link)' - <<< "${top_item}")"
 readonly top_id="${top_url}"
-readonly top_media="$(xmllint --xpath 'string(/item/description)' - <<< "${top_item}" | xmllint --html --xpath '//img' -)"
+readonly top_media="$(xmllint --xpath 'string(/item/description)' - <<< "${top_item}" | xmllint 2>/dev/null --html --xpath '//img' -)"
 
 # Exit early if item already in feed
 [[ "$(jq --raw-output '.items[0].id' "${feed_file}")" == "${top_id}" ]] && exit

@@ -10,9 +10,9 @@ readonly tmp_file="$(mktemp)"
 readonly source_url='https://tapas.io/rss/series/3346/'
 readonly top_url="$(curl "${source_url}" | xmllint --xpath 'string(/rss/channel/item[1]/link)' -)"
 readonly top_id="$(awk -F '/' '{print $NF}' <<< "${top_url}")"
-readonly top_title="$(curl "${top_url}" | xmllint --html --xpath "string(//*[@id='episode-${top_id}']/div[1]/div/p[1])" - | sed 's/\?.*//')"
-readonly top_media="$(curl "${top_url}" | xmllint --html --xpath "string(//*[@id='episode-${top_id}']/div[1]/article/img[1]/@data-src)" - | sed 's/\?.*//')"
-readonly top_bonus="$(curl "${top_url}" | xmllint --html --xpath "string(//*[@id='episode-${top_id}']/div[1]/article/img[2]/@data-src)" - | sed 's/\?.*//')"
+readonly top_title="$(curl "${top_url}" | xmllint 2>/dev/null --html --xpath "string(//*[@id='episode-${top_id}']/div[1]/div/p[1])" - | sed 's/\?.*//')"
+readonly top_media="$(curl "${top_url}" | xmllint 2>/dev/null --html --xpath "string(//*[@id='episode-${top_id}']/div[1]/article/img[1]/@data-src)" - | sed 's/\?.*//')"
+readonly top_bonus="$(curl "${top_url}" | xmllint 2>/dev/null --html --xpath "string(//*[@id='episode-${top_id}']/div[1]/article/img[2]/@data-src)" - | sed 's/\?.*//')"
 
 # Exit early if item already in feed
 [[ "$(jq --raw-output '.items[0].id' "${feed_file}")" == "${top_id}" ]] && exit
