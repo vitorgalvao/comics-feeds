@@ -4,6 +4,12 @@
   "home_page_url": "https://tapas.io/series/MrLovenstein/info",
   "items": [
     {
+      "id": "3696455",
+      "url": "https://tapas.io/episode/3696455",
+      "title": "Recommendation",
+      "content_html": "<img src='https://us-a.tapas.io/c/a2/a3224171-75bb-4556-8363-743c86e29489.png'><br><img src='https://us-a.tapas.io/c/93/cbdb5944-65ba-4c39-a2c8-48c30fe20879.gif'>"
+    },
+    {
       "id": "3690138",
       "url": "https://tapas.io/episode/3690138",
       "title": "Hold the Phone",
@@ -26,12 +32,6 @@
       "url": "https://tapas.io/episode/3670612",
       "title": "Keep it 100",
       "content_html": "<img src='https://us-a.tapas.io/c/e0/67795eb0-1875-4093-8f9e-bd9aeba4e548.png'><br><img src='https://us-a.tapas.io/c/c6/98ba6f00-7844-417d-a4eb-17858389a43b.gif'>"
-    },
-    {
-      "id": "3666580",
-      "url": "https://tapas.io/episode/3666580",
-      "title": "Zombo the Gorilla",
-      "content_html": "<img src='https://us-a.tapas.io/c/65/f0985350-13e0-4c9c-99d3-bf0ccbf6758d.png'><br><img src='https://us-a.tapas.io/c/66/b973a467-6998-4227-944f-de0ef0b817a5.gif'>"
     }
   ]
 }
