@@ -4,6 +4,12 @@
   "home_page_url": "https://tapas.io/series/MrLovenstein/info",
   "items": [
     {
+      "id": "3703518",
+      "url": "https://tapas.io/episode/3703518",
+      "title": "Decomposure",
+      "content_html": "<img src='https://us-a.tapas.io/c/55/c493dffa-81cb-4f51-96db-e3484d3ef5c0.png'><br><img src='https://us-a.tapas.io/c/6e/bdaaef1a-6cef-4269-9bb9-bbd0c9461c58.gif'>"
+    },
+    {
       "id": "3698631",
       "url": "https://tapas.io/episode/3698631",
       "title": "Bad Crowmance",
@@ -26,12 +32,6 @@
       "url": "https://tapas.io/episode/3679146",
       "title": "Higher Power",
       "content_html": "<img src='https://us-a.tapas.io/c/56/2a3a8aa7-6f54-4195-ab3f-68e0bde57085.png'><br><img src='https://us-a.tapas.io/c/56/e84a454d-6d25-47f3-9296-8040ff8f8327.gif'>"
-    },
-    {
-      "id": "3672401",
-      "url": "https://tapas.io/episode/3672401",
-      "title": "Nowhere To Go But Up",
-      "content_html": "<img src='https://us-a.tapas.io/c/63/4eab7970-1fc1-4ce4-a4f1-e30a44898cb7.png'><br><img src='https://us-a.tapas.io/c/24/343053b5-bcde-425d-ba5c-35f3eb19f06f.gif'>"
     }
   ]
 }
