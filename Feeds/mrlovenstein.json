@@ -4,6 +4,12 @@
   "home_page_url": "https://tapas.io/series/MrLovenstein/info",
   "items": [
     {
+      "id": "3735274",
+      "url": "https://tapas.io/episode/3735274",
+      "title": "Sneaky Snuggles",
+      "content_html": "<img src='https://us-a.tapas.io/c/b7/fb4cbe92-7860-4b0d-8bf6-5d200be28f43.png'><br><img src='https://us-a.tapas.io/c/66/c6186203-e0f8-4450-a93d-d7a3ad8be352.gif'>"
+    },
+    {
       "id": "3729169",
       "url": "https://tapas.io/episode/3729169",
       "title": "Out on a Whim",
@@ -26,12 +32,6 @@
       "url": "https://tapas.io/episode/3712665",
       "title": "Pick up Game",
       "content_html": "<img src='https://us-a.tapas.io/c/84/bd3cdb8f-f4b1-42ba-9431-4de5e2ec7a04.png'><br><img src='https://us-a.tapas.io/c/0a/9212d85f-7101-4664-9361-7b2d1a97b126.gif'>"
-    },
-    {
-      "id": "3706460",
-      "url": "https://tapas.io/episode/3706460",
-      "title": "A Peasant Surprise",
-      "content_html": "<img src='https://us-a.tapas.io/c/05/b35623d6-2514-43a8-bc43-bd08b6aaf4fc.png'><br><img src='https://us-a.tapas.io/c/ad/42bfcb45-9334-46a0-bff5-b86f51a125ae.gif'>"
     }
   ]
 }
