@@ -4,6 +4,12 @@
   "home_page_url": "https://tapas.io/series/MrLovenstein/info",
   "items": [
     {
+      "id": "3749362",
+      "url": "https://tapas.io/episode/3749362",
+      "title": "If You Give a Mouse a Cookie",
+      "content_html": "<img src='https://us-a.tapas.io/c/a3/9c3ca992-4cc2-4f37-8363-5d9f19b2ef06.png'><br><img src='https://us-a.tapas.io/c/8a/a69ddcd4-6500-4b0a-93c3-1316855c8eed.gif'>"
+    },
+    {
       "id": "3745345",
       "url": "https://tapas.io/episode/3745345",
       "title": "Dicey",
@@ -26,12 +32,6 @@
       "url": "https://tapas.io/episode/3729169",
       "title": "Out on a Whim",
       "content_html": "<img src='https://us-a.tapas.io/c/5b/97267c68-9c2d-4c3f-a6b9-b9f63d438c29.png'><br><img src='https://us-a.tapas.io/c/bf/18ce0d7e-6173-452e-824c-26115f1004fa.gif'>"
-    },
-    {
-      "id": "3723999",
-      "url": "https://tapas.io/episode/3723999",
-      "title": "Draw with a Mouse",
-      "content_html": "<img src='https://us-a.tapas.io/c/80/274ebed5-c5c8-4ef6-a6a8-9adb1e0031ef.png'><br><img src='https://us-a.tapas.io/c/f7/9de41cfd-1bbd-4208-abce-cf4a7d57c66e.gif'>"
     }
   ]
 }
