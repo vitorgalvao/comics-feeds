@@ -4,6 +4,12 @@
   "home_page_url": "https://tapas.io/series/MrLovenstein/info",
   "items": [
     {
+      "id": "3753063",
+      "url": "https://tapas.io/episode/3753063",
+      "title": "Rest Assured",
+      "content_html": "<img src='https://us-a.tapas.io/c/c4/41860686-4f4a-4f6f-8d59-fb61c88d0927.png'><br><img src='https://us-a.tapas.io/c/4a/d32116e3-7e62-4ad5-90a9-3702ba62cf8d.gif'>"
+    },
+    {
       "id": "3749362",
       "url": "https://tapas.io/episode/3749362",
       "title": "If You Give a Mouse a Cookie",
@@ -26,12 +32,6 @@
       "url": "https://tapas.io/episode/3735274",
       "title": "Sneaky Snuggles",
       "content_html": "<img src='https://us-a.tapas.io/c/b7/fb4cbe92-7860-4b0d-8bf6-5d200be28f43.png'><br><img src='https://us-a.tapas.io/c/66/c6186203-e0f8-4450-a93d-d7a3ad8be352.gif'>"
-    },
-    {
-      "id": "3729169",
-      "url": "https://tapas.io/episode/3729169",
-      "title": "Out on a Whim",
-      "content_html": "<img src='https://us-a.tapas.io/c/5b/97267c68-9c2d-4c3f-a6b9-b9f63d438c29.png'><br><img src='https://us-a.tapas.io/c/bf/18ce0d7e-6173-452e-824c-26115f1004fa.gif'>"
     }
   ]
 }
