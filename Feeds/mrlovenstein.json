@@ -4,6 +4,12 @@
   "home_page_url": "https://tapas.io/series/MrLovenstein/info",
   "items": [
     {
+      "id": "3756213",
+      "url": "https://tapas.io/episode/3756213",
+      "title": "Extra Extra Terrestrial",
+      "content_html": "<img src='https://us-a.tapas.io/c/78/53c0c27f-6dbb-403c-b2fd-ec274469c48d.png'><br><img src='https://us-a.tapas.io/c/73/296a7ead-86bd-4655-8986-dd40be621595.gif'>"
+    },
+    {
       "id": "3753063",
       "url": "https://tapas.io/episode/3753063",
       "title": "Rest Assured",
@@ -26,12 +32,6 @@
       "url": "https://tapas.io/episode/3740756",
       "title": "Cost of Living",
       "content_html": "<img src='https://us-a.tapas.io/c/f8/5e522a01-0d68-4d1e-9890-96d642a03656.png'><br><img src='https://us-a.tapas.io/c/ba/8eb01d2f-0c3a-479a-b182-aaf41b11cd9e.gif'>"
-    },
-    {
-      "id": "3735274",
-      "url": "https://tapas.io/episode/3735274",
-      "title": "Sneaky Snuggles",
-      "content_html": "<img src='https://us-a.tapas.io/c/b7/fb4cbe92-7860-4b0d-8bf6-5d200be28f43.png'><br><img src='https://us-a.tapas.io/c/66/c6186203-e0f8-4450-a93d-d7a3ad8be352.gif'>"
     }
   ]
 }
