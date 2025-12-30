@@ -4,6 +4,12 @@
   "home_page_url": "https://tapas.io/series/MrLovenstein/info",
   "items": [
     {
+      "id": "3765447",
+      "url": "https://tapas.io/episode/3765447",
+      "title": "Go On",
+      "content_html": "<img src='https://us-a.tapas.io/c/a9/4ce1f087-c878-4e52-b9e8-44e9b8783600.png'><br><img src='https://us-a.tapas.io/c/b6/ef08645a-9257-447d-8790-f58732646f12.gif'>"
+    },
+    {
       "id": "3756213",
       "url": "https://tapas.io/episode/3756213",
       "title": "Extra Extra Terrestrial",
@@ -26,12 +32,6 @@
       "url": "https://tapas.io/episode/3745345",
       "title": "Dicey",
       "content_html": "<img src='https://us-a.tapas.io/c/c6/bfbbc31e-4741-4816-bcab-db8438f4331b.png'><br><img src='https://us-a.tapas.io/c/7b/1cb7c7b2-b3c5-4742-a58c-9a7a046ed1b2.gif'>"
-    },
-    {
-      "id": "3740756",
-      "url": "https://tapas.io/episode/3740756",
-      "title": "Cost of Living",
-      "content_html": "<img src='https://us-a.tapas.io/c/f8/5e522a01-0d68-4d1e-9890-96d642a03656.png'><br><img src='https://us-a.tapas.io/c/ba/8eb01d2f-0c3a-479a-b182-aaf41b11cd9e.gif'>"
     }
   ]
 }
