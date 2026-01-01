@@ -4,6 +4,12 @@
   "home_page_url": "https://tapas.io/series/MrLovenstein/info",
   "items": [
     {
+      "id": "3766658",
+      "url": "https://tapas.io/episode/3766658",
+      "title": "Dog Eat Dog",
+      "content_html": "<img src='https://us-a.tapas.io/c/52/58a34328-323b-4a7e-988a-8eba51d9183a.png'><br><img src='https://us-a.tapas.io/c/e4/ea0208e2-80a1-4340-ba8a-b47453ca329d.gif'>"
+    },
+    {
       "id": "3765447",
       "url": "https://tapas.io/episode/3765447",
       "title": "Go On",
@@ -26,12 +32,6 @@
       "url": "https://tapas.io/episode/3749362",
       "title": "If You Give a Mouse a Cookie",
       "content_html": "<img src='https://us-a.tapas.io/c/a3/9c3ca992-4cc2-4f37-8363-5d9f19b2ef06.png'><br><img src='https://us-a.tapas.io/c/8a/a69ddcd4-6500-4b0a-93c3-1316855c8eed.gif'>"
-    },
-    {
-      "id": "3745345",
-      "url": "https://tapas.io/episode/3745345",
-      "title": "Dicey",
-      "content_html": "<img src='https://us-a.tapas.io/c/c6/bfbbc31e-4741-4816-bcab-db8438f4331b.png'><br><img src='https://us-a.tapas.io/c/7b/1cb7c7b2-b3c5-4742-a58c-9a7a046ed1b2.gif'>"
     }
   ]
 }
