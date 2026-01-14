@@ -1,0 +1,38 @@
+name: Generate Feeds
+permissions: {} # Lock down permissions by default
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '14 17 * * *'
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Prepare repository
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@users.noreply.github.com'
+          git clone "https://x-access-token:${GITHUB_TOKEN}@github.com/${REPOSITORY}" .
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install libxml2-utils
+      - name: Fetch data and generate feeds
+        run: |
+          for script in "$(pwd)/Scripts/"*
+          do
+            echo "Running $(basename "${script}")..."
+            "${script}"
+          done
+      - name: Commit if there are changes then push
+        run: |
+          git add --all
+          git diff-index --quiet HEAD || git commit --message 'Updated feeds'
+          git push
