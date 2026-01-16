@@ -4,6 +4,12 @@
   "home_page_url": "https://tapas.io/series/MrLovenstein/info",
   "items": [
     {
+      "id": "3781704",
+      "url": "https://tapas.io/episode/3781704",
+      "title": "Chill Pill",
+      "content_html": "<img src='https://us-a.tapas.io/c/4a/f19c3256-4e59-429c-9f92-13ac298eec5c.png'><br><img src='https://us-a.tapas.io/c/df/c50cf568-b53e-4815-84b9-8f458a491a1b.gif'>"
+    },
+    {
       "id": "3778774",
       "url": "https://tapas.io/episode/3778774",
       "title": "Love Finds a Way",
@@ -26,12 +32,6 @@
       "url": "https://tapas.io/episode/3765447",
       "title": "Go On",
       "content_html": "<img src='https://us-a.tapas.io/c/a9/4ce1f087-c878-4e52-b9e8-44e9b8783600.png'><br><img src='https://us-a.tapas.io/c/b6/ef08645a-9257-447d-8790-f58732646f12.gif'>"
-    },
-    {
-      "id": "3756213",
-      "url": "https://tapas.io/episode/3756213",
-      "title": "Extra Extra Terrestrial",
-      "content_html": "<img src='https://us-a.tapas.io/c/78/53c0c27f-6dbb-403c-b2fd-ec274469c48d.png'><br><img src='https://us-a.tapas.io/c/73/296a7ead-86bd-4655-8986-dd40be621595.gif'>"
     }
   ]
 }
